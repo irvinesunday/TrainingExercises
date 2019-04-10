@@ -9,8 +9,11 @@ namespace TrainingExercises
     public class StringValidation
     {
         /// <summary>
-        /// Time: Worst Case --> O(N) Best Case --> O(N)
-        /// Space: O(N)
+        /// Function that validates the balancing of brackets.
+        /// Time Complexity: 
+        ///      Worst Case --> O(N) Where N is the number of characters in the string
+        ///      Best Case --> O(1) If the sentence starts with a closed bracket ')'
+        /// Space Complexity: O(1) The space is fixed: 1 char variable, 1 int variable
         /// </summary>
         /// <param name="stringToValidate"></param>
         /// <param name="openBracketCharacter"></param>
@@ -23,7 +26,7 @@ namespace TrainingExercises
                 throw new ArgumentNullException(stringToValidate, "Input value cannot be empty.");
 
             if (openBracketCharacter == '\0' ||
-               closedBracketCharacter == '\0')
+                closedBracketCharacter == '\0')
                 throw new ArgumentNullException("Bracket character values cannot be empty");
 
             char firstBracketFound = '\0';
