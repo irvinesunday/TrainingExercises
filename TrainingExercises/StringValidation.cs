@@ -22,6 +22,10 @@ namespace TrainingExercises
             if (String.IsNullOrEmpty(stringToValidate))
                 throw new ArgumentNullException(stringToValidate, "Input value cannot be empty.");
 
+            if (openBracketCharacter == '\0' ||
+               closedBracketCharacter == '\0')
+                throw new ArgumentNullException("Bracket character values cannot be empty");
+
             char firstBracketFound = '\0';
             int bracketsCounter = 0;
 

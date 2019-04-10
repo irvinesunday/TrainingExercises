@@ -13,7 +13,7 @@ namespace TrainingExercises
             //var recurse = new Recursion();
             //recurse.StringReverse2(new char[] { 's', 'u', 'n', 'd', 'a', 'y' });         
 
-            string word = "today is (Tuesday), tomorrow will be (Sunday))";
+            string word = ""; // "today is (Tuesday), tomorrow will be (Sunday))";
             bool result = StringValidation.IsStringValid(word, '(', ')');
 
             Console.WriteLine(result);
