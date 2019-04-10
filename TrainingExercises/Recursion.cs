@@ -57,5 +57,10 @@ namespace TrainingExercises
 
             DoStringReverse2(start + 1, end - 1, input);
         }
+
+        private void SortString(int[] input)
+        {
+         //   string[] strInput = input.to
+        }
     }
 }
