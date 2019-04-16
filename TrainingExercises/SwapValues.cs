@@ -19,5 +19,15 @@ namespace TrainingExercises
             Console.Read();
 
         }
+        public void SwapStringsWithoutTempVariable(string firstString, string secondString)
+        {
+            firstString = firstString + "%" + secondString;
+            secondString = firstString.Remove(firstString.IndexOf('%'));
+            firstString = firstString.Substring(firstString.IndexOf('%') + 1);
+
+            Console.WriteLine(firstString);
+            Console.WriteLine(secondString);
+            Console.Read();
+        }
     }
 }
