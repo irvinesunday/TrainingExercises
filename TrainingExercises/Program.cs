@@ -13,11 +13,17 @@ namespace TrainingExercises
             //var recurse = new Recursion();
             //recurse.StringReverse2(new char[] { 's', 'u', 'n', 'd', 'a', 'y' });         
 
-            string word = ""; // "today is (Tuesday), tomorrow will be (Sunday))";
-            bool result = StringValidation.IsStringValid(word, '(', ')');
+            //string word = ""; // "today is (Tuesday), tomorrow will be (Sunday))";
+            //bool result = StringValidation.IsStringValid(word, '(', ')');
 
-            Console.WriteLine(result);
-            Console.Read();
+            //Console.WriteLine(result);
+            //Console.Read();
+
+            int firstNumber = 455;
+            int secondNumber = 667;
+
+            var swapValues = new SwapValues();
+            swapValues.SwapNumbersWithoutTempVariable(firstNumber, secondNumber);
         }
     }
 }
