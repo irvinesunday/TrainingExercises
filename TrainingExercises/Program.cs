@@ -19,16 +19,15 @@ namespace TrainingExercises
             //Console.WriteLine(result);
             //Console.Read();
 
-            //int firstNumber = 455;
-            //int secondNumber = 667;
-
             var swapValues = new SwapValues();
-            //swapValues.SwapNumbersWithoutTempVariable(firstNumber, secondNumber);
 
-            string firstString = "Irvine is a cool guy";
-            string secondString = "Sunday is an Engineer";
+            int firstNumber = 123;
+            int secondNumber = 456;
+            swapValues.SwapNumbersWithoutTempVariable(firstNumber, secondNumber);
 
-            swapValues.SwapStringsWithoutTempVariable(firstString, secondString);
+            //string firstString = "Irvine is a cool guy";
+            //string secondString = "Sunday is an Engineer";
+            //swapValues.SwapStringsWithoutTempVariable(firstString, secondString);
         }
     }
 }
