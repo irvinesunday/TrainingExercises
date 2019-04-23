@@ -24,7 +24,7 @@ namespace TrainingExercises
             int firstNumber = 123;
             int secondNumber = 456;
             swapValues.SwapNumbersWithoutTempVariable(firstNumber, secondNumber);
-
+            
             //string firstString = "Irvine is a cool guy";
             //string secondString = "Sunday is an Engineer";
             //swapValues.SwapStringsWithoutTempVariable(firstString, secondString);

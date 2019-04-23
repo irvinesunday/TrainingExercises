@@ -13,23 +13,23 @@ namespace TrainingExercises
         /// </summary>
         /// <param name="firstNumber"></param>
         /// <param name="secondnumber"></param>
-        public void SwapNumbersWithoutTempVariable(int firstNumber, int secondnumber)
+        public void SwapNumbersWithoutTempVariable(int firstNumber, int secondNumber)
         {
             Console.WriteLine("--- BEFORE SWAP ---");
             Console.WriteLine($"First number: {firstNumber.ToString()}");
-            Console.WriteLine($"Second number: {secondnumber.ToString()}\n");          
+            Console.WriteLine($"Second number: {secondNumber.ToString()}\n");
 
-            firstNumber = Int32.Parse((firstNumber.ToString() + secondnumber.ToString()));
-            secondnumber = Int32.Parse(firstNumber.ToString().Remove(firstNumber.ToString().IndexOf(secondnumber.ToString()[0]))); // Remove the value after the secondNumber
-            firstNumber = Int32.Parse(firstNumber.ToString().Substring(firstNumber.ToString().IndexOf(secondnumber.ToString()[0]) + secondnumber.ToString().Count())); // Remove everything before the secondNumber
+            firstNumber = firstNumber + secondNumber;
+            secondNumber = firstNumber - secondNumber;
+            firstNumber = firstNumber - secondNumber;
 
             Console.WriteLine("--- AFTER SWAP ---");
             Console.WriteLine("First number: " + firstNumber.ToString());
-            Console.WriteLine("Second number: " + secondnumber.ToString());
+            Console.WriteLine("Second number: " + secondNumber.ToString());
             Console.Read();
 
         }
-
+        
         /// <summary>
         /// Function to swap two strings without a temp variable
         /// </summary>
